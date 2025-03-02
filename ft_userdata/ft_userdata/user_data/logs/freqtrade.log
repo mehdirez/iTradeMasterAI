@@ -1,0 +1,1554 @@
+2025-02-28 04:24:13,791 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:24:13,792 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:24:13,792 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:24:13,792 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:24:13,793 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:24:13,795 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:24:13,795 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:24:13,923 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:24:13,925 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:24:13,925 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:24:13,927 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:24:13,942 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:24:13,943 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:24:13,980 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:24:13,981 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:24:13,982 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:24:13,982 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:24:13,982 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:24:13,983 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:24:13,983 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:24:13,984 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:24:13,984 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:24:13,984 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:24:13,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:24:13,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:24:13,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:24:13,986 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:24:13,987 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:24:13,987 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:24:13,988 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:24:13,988 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:24:13,989 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:24:13,990 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:24:13,990 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:24:13,991 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:24:13,991 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:24:13,992 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:24:13,992 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:24:13,993 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:24:13,994 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:24:13,994 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:24:13,995 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:24:13,997 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:24:13,998 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:24:14,001 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:24:14,002 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:24:14,003 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:24:14,016 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:24:14,032 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:24:15,890 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:24:16,116 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:24:16,357 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:24:16,366 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:24:18,198 - matplotlib.font_manager - INFO - generated new fontManager
+2025-02-28 04:24:18,536 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:24:23,494 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:24:23,495 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:24:23,496 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:24:23,496 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:24:23,497 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:24:23,497 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:24:23,497 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:24:23,620 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:24:23,622 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:24:23,622 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:24:23,623 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:24:23,636 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:24:23,637 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:24:23,667 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:24:23,668 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:24:23,668 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:24:23,669 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:24:23,669 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:24:23,669 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:24:23,669 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:24:23,670 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:24:23,670 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:24:23,670 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:24:23,671 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:24:23,671 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:24:23,671 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:24:23,671 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:24:23,672 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:24:23,672 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:24:23,672 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:24:23,672 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:24:23,673 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:24:23,673 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:24:23,673 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:24:23,673 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:24:23,674 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:24:23,674 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:24:23,674 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:24:23,674 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:24:23,675 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:24:23,675 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:24:23,675 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:24:23,675 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:24:23,676 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:24:23,679 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:24:23,679 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:24:23,679 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:24:23,691 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:24:23,704 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:24:25,545 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:24:25,619 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:24:25,824 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:24:25,837 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:24:27,755 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:24:32,716 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:24:32,716 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:24:32,717 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:24:32,718 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:24:32,718 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:24:32,718 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:24:32,719 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:24:32,840 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:24:32,841 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:24:32,842 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:24:32,843 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:24:32,856 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:24:32,857 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:24:32,888 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:24:32,890 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:24:32,890 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:24:32,891 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:24:32,891 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:24:32,891 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:24:32,891 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:24:32,892 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:24:32,892 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:24:32,892 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:24:32,892 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:24:32,893 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:24:32,893 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:24:32,893 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:24:32,894 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:24:32,894 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:24:32,894 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:24:32,895 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:24:32,895 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:24:32,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:24:32,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:24:32,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:24:32,897 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:24:32,897 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:24:32,897 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:24:32,898 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:24:32,898 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:24:32,898 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:24:32,898 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:24:32,899 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:24:32,899 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:24:32,904 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:24:32,904 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:24:32,904 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:24:32,922 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:24:32,939 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:24:34,883 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:24:34,960 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:24:35,161 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:24:35,170 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:24:37,071 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:24:42,341 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:24:42,342 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:24:42,342 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:24:42,343 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:24:42,343 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:24:42,344 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:24:42,344 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:24:42,477 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:24:42,479 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:24:42,479 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:24:42,480 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:24:42,494 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:24:42,495 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:24:42,531 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:24:42,532 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:24:42,533 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:24:42,533 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:24:42,534 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:24:42,534 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:24:42,535 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:24:42,535 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:24:42,536 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:24:42,536 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:24:42,537 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:24:42,537 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:24:42,537 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:24:42,538 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:24:42,538 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:24:42,538 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:24:42,538 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:24:42,539 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:24:42,539 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:24:42,539 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:24:42,540 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:24:42,540 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:24:42,540 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:24:42,540 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:24:42,541 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:24:42,541 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:24:42,541 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:24:42,541 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:24:42,541 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:24:42,542 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:24:42,542 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:24:42,545 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:24:42,546 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:24:42,546 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:24:42,557 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:24:42,571 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:24:44,497 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:24:44,581 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:24:44,796 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:24:44,806 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:24:46,869 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:24:52,438 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:24:52,439 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:24:52,440 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:24:52,440 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:24:52,441 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:24:52,441 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:24:52,441 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:24:52,559 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:24:52,560 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:24:52,560 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:24:52,561 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:24:52,575 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:24:52,575 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:24:52,600 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:24:52,601 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:24:52,601 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:24:52,602 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:24:52,602 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:24:52,602 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:24:52,603 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:24:52,603 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:24:52,603 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:24:52,603 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:24:52,604 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:24:52,604 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:24:52,604 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:24:52,604 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:24:52,605 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:24:52,605 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:24:52,605 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:24:52,605 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:24:52,606 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:24:52,606 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:24:52,606 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:24:52,606 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:24:52,607 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:24:52,607 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:24:52,607 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:24:52,607 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:24:52,607 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:24:52,608 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:24:52,608 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:24:52,608 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:24:52,608 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:24:52,611 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:24:52,612 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:24:52,612 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:24:52,623 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:24:52,637 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:24:54,486 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:24:54,557 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:24:54,758 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:24:54,768 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:24:56,814 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:25:02,965 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:25:02,965 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:25:02,966 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:25:02,966 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:25:02,966 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:25:02,966 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:25:02,967 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:25:03,111 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:25:03,113 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:25:03,114 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:25:03,115 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:25:03,129 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:25:03,130 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:25:03,166 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:25:03,168 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:25:03,168 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:25:03,169 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:25:03,169 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:25:03,169 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:25:03,170 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:25:03,170 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:25:03,170 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:25:03,171 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:25:03,171 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:25:03,172 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:25:03,172 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:25:03,172 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:25:03,173 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:25:03,173 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:25:03,173 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:25:03,174 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:25:03,174 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:25:03,174 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:25:03,175 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:25:03,175 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:25:03,175 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:25:03,176 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:25:03,176 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:25:03,176 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:25:03,177 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:25:03,177 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:25:03,177 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:25:03,178 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:25:03,178 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:25:03,182 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:25:03,182 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:25:03,183 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:25:03,195 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:25:03,211 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:25:05,118 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:25:05,184 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:25:05,388 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:25:05,398 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:25:07,500 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:25:15,334 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:25:15,335 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:25:15,335 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:25:15,335 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:25:15,336 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:25:15,336 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:25:15,337 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:25:15,453 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:25:15,454 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:25:15,455 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:25:15,456 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:25:15,469 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:25:15,469 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:25:15,498 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:25:15,500 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:25:15,500 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:25:15,501 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:25:15,501 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:25:15,502 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:25:15,502 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:25:15,502 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:25:15,502 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:25:15,503 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:25:15,503 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:25:15,503 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:25:15,504 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:25:15,504 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:25:15,504 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:25:15,504 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:25:15,505 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:25:15,505 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:25:15,505 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:25:15,505 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:25:15,506 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:25:15,506 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:25:15,506 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:25:15,506 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:25:15,507 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:25:15,507 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:25:15,507 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:25:15,508 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:25:15,508 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:25:15,508 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:25:15,508 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:25:15,511 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:25:15,512 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:25:15,512 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:25:15,523 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:25:15,537 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:25:17,492 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:25:17,576 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:25:17,769 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:25:17,780 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:25:19,686 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:25:30,553 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:25:30,554 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:25:30,554 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:25:30,555 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:25:30,555 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:25:30,556 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:25:30,556 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:25:30,676 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:25:30,678 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:25:30,678 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:25:30,679 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:25:30,692 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:25:30,692 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:25:30,717 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:25:30,718 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:25:30,718 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:25:30,718 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:25:30,719 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:25:30,719 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:25:30,719 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:25:30,719 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:25:30,719 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:25:30,720 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:25:30,720 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:25:30,720 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:25:30,720 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:25:30,721 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:25:30,721 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:25:30,721 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:25:30,721 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:25:30,722 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:25:30,722 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:25:30,722 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:25:30,722 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:25:30,723 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:25:30,723 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:25:30,723 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:25:30,723 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:25:30,724 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:25:30,724 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:25:30,724 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:25:30,724 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:25:30,725 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:25:30,725 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:25:30,728 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:25:30,728 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:25:30,729 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:25:30,739 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:25:30,752 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:25:32,612 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:25:32,688 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:25:32,908 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:25:32,920 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:25:34,776 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:25:52,036 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:25:52,037 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:25:52,037 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:25:52,038 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:25:52,038 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:25:52,038 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:25:52,039 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:25:52,158 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:25:52,160 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:25:52,160 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:25:52,161 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:25:52,174 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:25:52,175 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:25:52,205 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:25:52,206 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:25:52,207 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:25:52,207 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:25:52,208 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:25:52,208 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:25:52,208 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:25:52,208 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:25:52,209 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:25:52,209 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:25:52,209 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:25:52,209 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:25:52,210 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:25:52,210 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:25:52,210 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:25:52,210 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:25:52,211 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:25:52,211 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:25:52,211 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:25:52,212 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:25:52,212 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:25:52,212 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:25:52,212 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:25:52,213 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:25:52,213 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:25:52,213 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:25:52,213 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:25:52,214 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:25:52,214 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:25:52,214 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:25:52,214 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:25:52,218 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:25:52,218 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:25:52,218 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:25:52,229 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:25:52,242 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:25:54,153 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:25:54,227 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:25:54,424 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:25:54,433 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:25:56,278 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:26:26,424 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:26:26,426 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:26:26,426 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:26:26,427 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:26:26,427 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:26:26,428 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:26:26,428 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:26:26,549 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:26:26,550 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:26:26,550 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:26:26,551 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:26:26,564 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:26:26,565 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:26:26,592 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:26:26,592 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:26:26,593 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:26:26,593 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:26:26,593 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:26:26,594 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:26:26,594 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:26:26,594 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:26:26,594 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:26:26,595 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:26:26,595 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:26:26,595 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:26:26,595 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:26:26,596 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:26:26,596 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:26:26,596 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:26:26,596 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:26:26,597 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:26:26,597 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:26:26,597 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:26:26,597 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:26:26,598 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:26:26,598 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:26:26,598 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:26:26,598 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:26:26,598 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:26:26,599 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:26:26,599 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:26:26,599 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:26:26,599 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:26:26,600 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:26:26,603 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:26:26,603 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:26:26,604 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:26:26,615 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:26:26,629 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:26:28,592 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:26:28,666 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:26:28,899 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:26:28,908 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:26:30,817 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:27:26,776 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:27:26,777 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:27:26,777 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:27:26,777 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:27:26,778 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:27:26,778 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:27:26,779 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:27:26,911 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:27:26,913 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:27:26,914 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:27:26,914 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:27:26,928 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:27:26,929 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:27:26,964 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:27:26,965 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:27:26,966 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:27:26,966 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:27:26,966 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:27:26,967 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:27:26,967 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:27:26,967 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:27:26,968 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:27:26,968 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:27:26,969 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:27:26,969 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:27:26,970 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:27:26,970 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:27:26,970 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:27:26,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:27:26,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:27:26,972 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:27:26,972 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:27:26,972 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:27:26,972 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:27:26,973 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:27:26,973 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:27:26,973 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:27:26,973 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:27:26,974 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:27:26,974 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:27:26,974 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:27:26,974 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:27:26,975 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:27:26,975 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:27:26,978 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:27:26,979 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:27:26,979 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:27:26,992 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:27:27,008 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:27:28,931 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:27:29,008 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:27:29,209 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:27:29,219 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:27:31,360 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:28:36,019 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:28:36,020 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:28:36,021 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:28:36,021 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:28:36,021 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:28:36,022 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:28:36,022 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:28:36,120 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:28:36,122 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:28:36,122 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:28:36,123 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:28:36,137 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:28:36,137 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:28:36,173 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:28:36,174 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:28:36,174 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:28:36,175 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:28:36,175 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:28:36,175 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:28:36,176 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:28:36,176 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:28:36,176 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:28:36,177 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:28:36,177 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:28:36,177 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:28:36,177 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:28:36,178 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:28:36,178 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:28:36,178 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:28:36,179 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:28:36,179 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:28:36,179 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:28:36,179 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:28:36,180 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:28:36,180 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:28:36,180 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:28:36,180 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:28:36,181 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:28:36,181 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:28:36,181 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:28:36,181 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:28:36,182 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:28:36,182 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:28:36,182 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:28:36,186 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:28:36,187 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:28:36,187 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:28:36,201 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:28:36,221 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:28:38,108 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:28:38,186 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:28:38,390 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:28:38,400 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:28:40,464 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:29:44,871 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:29:44,872 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:29:44,872 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:29:44,872 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:29:44,873 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:29:44,873 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:29:44,873 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:29:44,983 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:29:44,984 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:29:44,985 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:29:44,986 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:29:44,999 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:29:45,000 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:29:45,089 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:29:45,091 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:29:45,091 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:29:45,092 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:29:45,092 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:29:45,092 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:29:45,092 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:29:45,093 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:29:45,093 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:29:45,093 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:29:45,094 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:29:45,094 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:29:45,094 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:29:45,094 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:29:45,095 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:29:45,095 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:29:45,095 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:29:45,095 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:29:45,096 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:29:45,096 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:29:45,096 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:29:45,097 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:29:45,097 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:29:45,097 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:29:45,097 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:29:45,098 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:29:45,098 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:29:45,098 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:29:45,098 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:29:45,099 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:29:45,099 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:29:45,102 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:29:45,102 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:29:45,103 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:29:45,115 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:29:45,129 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:29:47,201 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:29:47,279 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:29:47,512 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:29:47,521 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:29:49,303 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:30:53,757 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:30:53,758 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:30:53,758 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:30:53,758 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:30:53,759 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:30:53,759 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:30:53,759 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:30:53,878 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:30:53,879 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:30:53,880 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:30:53,881 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:30:53,895 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:30:53,896 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:30:53,926 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:30:53,927 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:30:53,927 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:30:53,928 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:30:53,928 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:30:53,928 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:30:53,928 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:30:53,928 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:30:53,929 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:30:53,929 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:30:53,929 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:30:53,929 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:30:53,930 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:30:53,930 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:30:53,930 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:30:53,930 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:30:53,931 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:30:53,931 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:30:53,931 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:30:53,931 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:30:53,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:30:53,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:30:53,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:30:53,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:30:53,933 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:30:53,933 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:30:53,933 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:30:53,933 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:30:53,934 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:30:53,934 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:30:53,935 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:30:53,938 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:30:53,939 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:30:53,939 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:30:53,951 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:30:53,964 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:30:55,878 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:30:55,957 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:30:56,155 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:30:56,164 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:30:58,180 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:32:03,436 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:32:03,437 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:32:03,437 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:32:03,438 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:32:03,438 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:32:03,438 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:32:03,439 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:32:03,589 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:32:03,591 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:32:03,591 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:32:03,593 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:32:03,606 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:32:03,606 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:32:03,645 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:32:03,647 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:32:03,648 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:32:03,648 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:32:03,648 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:32:03,648 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:32:03,649 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:32:03,649 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:32:03,649 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:32:03,650 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:32:03,650 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:32:03,650 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:32:03,651 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:32:03,651 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:32:03,651 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:32:03,651 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:32:03,652 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:32:03,652 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:32:03,652 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:32:03,653 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:32:03,653 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:32:03,653 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:32:03,653 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:32:03,654 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:32:03,654 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:32:03,654 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:32:03,654 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:32:03,655 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:32:03,655 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:32:03,655 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:32:03,656 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:32:03,662 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:32:03,662 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:32:03,663 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:32:03,678 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:32:03,692 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:32:06,085 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:32:06,166 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:32:07,174 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:32:07,186 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:32:09,680 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:32:15,458 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:32:15,459 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:32:15,459 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:32:15,460 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:32:15,460 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:32:15,461 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:32:15,461 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:32:15,599 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:32:15,601 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:32:15,601 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:32:15,602 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:32:15,620 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:32:15,620 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:32:15,656 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:32:15,657 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:32:15,658 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:32:15,659 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:32:15,659 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:32:15,659 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:32:15,660 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:32:15,660 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:32:15,660 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:32:15,661 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:32:15,661 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:32:15,662 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:32:15,662 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:32:15,662 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:32:15,663 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:32:15,663 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:32:15,663 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:32:15,664 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:32:15,664 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:32:15,664 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:32:15,665 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:32:15,665 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:32:15,665 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:32:15,666 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:32:15,666 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:32:15,666 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:32:15,667 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:32:15,667 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:32:15,667 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:32:15,668 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:32:15,668 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:32:15,673 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:32:15,674 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:32:15,675 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:32:15,690 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:32:15,707 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:32:17,842 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:32:17,911 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:32:18,113 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:32:18,123 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:32:20,709 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:32:27,306 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:32:27,307 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:32:27,308 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:32:27,308 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:32:27,309 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:32:27,309 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:32:27,310 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:32:27,474 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:32:27,477 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:32:27,478 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:32:27,479 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:32:27,498 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:32:27,499 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:32:27,541 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:32:27,542 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:32:27,543 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:32:27,544 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:32:27,545 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:32:27,545 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:32:27,545 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:32:27,546 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:32:27,546 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:32:27,546 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:32:27,547 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:32:27,547 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:32:27,547 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:32:27,548 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:32:27,548 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:32:27,548 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:32:27,549 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:32:27,549 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:32:27,550 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:32:27,550 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:32:27,550 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:32:27,551 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:32:27,551 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:32:27,551 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:32:27,552 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:32:27,552 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:32:27,552 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:32:27,553 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:32:27,553 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:32:27,554 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:32:27,554 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:32:27,560 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:32:27,560 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:32:27,561 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:32:27,577 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:32:27,598 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:32:29,736 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:32:29,812 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:32:30,020 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:32:30,030 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:32:32,546 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:32:39,109 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:32:39,110 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:32:39,111 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:32:39,111 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:32:39,112 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:32:39,112 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:32:39,112 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:32:39,258 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:32:39,260 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:32:39,260 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:32:39,262 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:32:39,279 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:32:39,279 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:32:39,311 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:32:39,312 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:32:39,313 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:32:39,314 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:32:39,314 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:32:39,314 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:32:39,314 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:32:39,315 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:32:39,315 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:32:39,315 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:32:39,316 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:32:39,316 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:32:39,316 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:32:39,317 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:32:39,317 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:32:39,317 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:32:39,317 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:32:39,318 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:32:39,318 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:32:39,318 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:32:39,319 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:32:39,319 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:32:39,320 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:32:39,320 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:32:39,320 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:32:39,321 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:32:39,321 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:32:39,321 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:32:39,322 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:32:39,322 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:32:39,322 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:32:39,326 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:32:39,326 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:32:39,327 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:32:39,348 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:32:39,367 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:32:41,500 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:32:41,578 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:32:41,782 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:32:41,791 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:32:44,068 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:32:49,539 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:32:49,540 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:32:49,540 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:32:49,541 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:32:49,542 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:32:49,542 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:32:49,542 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:32:49,659 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:32:49,661 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:32:49,661 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:32:49,662 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:32:49,675 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:32:49,676 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:32:49,702 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:32:49,703 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:32:49,704 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:32:49,704 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:32:49,704 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:32:49,704 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:32:49,705 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:32:49,705 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:32:49,705 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:32:49,705 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:32:49,706 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:32:49,706 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:32:49,706 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:32:49,706 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:32:49,707 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:32:49,707 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:32:49,707 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:32:49,707 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:32:49,707 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:32:49,708 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:32:49,708 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:32:49,708 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:32:49,708 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:32:49,709 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:32:49,709 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:32:49,709 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:32:49,709 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:32:49,710 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:32:49,710 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:32:49,710 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:32:49,710 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:32:49,713 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:32:49,714 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:32:49,714 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:32:49,725 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:32:49,738 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:32:51,706 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:32:51,789 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:32:51,985 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:32:51,995 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:32:54,077 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:33:00,498 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:33:00,499 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:33:00,500 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:33:00,501 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:33:00,501 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:33:00,502 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:33:00,502 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:33:00,617 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:33:00,618 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:33:00,619 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:33:00,620 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:33:00,632 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:33:00,633 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:33:00,705 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:33:00,706 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:33:00,707 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:33:00,707 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:33:00,708 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:33:00,708 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:33:00,708 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:33:00,709 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:33:00,709 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:33:00,709 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:33:00,710 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:33:00,710 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:33:00,711 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:33:00,711 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:33:00,711 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:33:00,711 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:33:00,712 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:33:00,712 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:33:00,712 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:33:00,713 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:33:00,713 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:33:00,713 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:33:00,714 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:33:00,714 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:33:00,714 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:33:00,714 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:33:00,715 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:33:00,715 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:33:00,715 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:33:00,715 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:33:00,716 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:33:00,719 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:33:00,719 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:33:00,720 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:33:00,731 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:33:00,745 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:33:02,929 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:33:03,011 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:33:03,226 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:33:03,236 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:33:05,328 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:33:10,750 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:33:10,750 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:33:10,751 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:33:10,752 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:33:10,752 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:33:10,753 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:33:10,753 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:33:10,875 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:33:10,877 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:33:10,877 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:33:10,878 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:33:10,891 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:33:10,892 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:33:10,923 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:33:10,924 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:33:10,924 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:33:10,925 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:33:10,925 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:33:10,925 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:33:10,926 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:33:10,926 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:33:10,926 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:33:10,926 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:33:10,927 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:33:10,927 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:33:10,927 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:33:10,927 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:33:10,928 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:33:10,928 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:33:10,928 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:33:10,929 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:33:10,929 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:33:10,929 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:33:10,929 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:33:10,930 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:33:10,930 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:33:10,930 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:33:10,930 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:33:10,931 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:33:10,931 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:33:10,931 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:33:10,931 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:33:10,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:33:10,932 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:33:10,935 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:33:10,935 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:33:10,936 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:33:10,947 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:33:10,960 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:33:13,008 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:33:13,082 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:33:13,289 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:33:13,298 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:33:15,832 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:33:21,159 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:33:21,160 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:33:21,160 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:33:21,160 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:33:21,160 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:33:21,161 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:33:21,161 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:33:21,276 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:33:21,278 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:33:21,278 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:33:21,279 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:33:21,293 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:33:21,294 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:33:21,324 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:33:21,325 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:33:21,326 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:33:21,326 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:33:21,326 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:33:21,326 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:33:21,327 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:33:21,327 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:33:21,327 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:33:21,328 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:33:21,328 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:33:21,328 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:33:21,328 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:33:21,329 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:33:21,329 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:33:21,329 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:33:21,329 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:33:21,330 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:33:21,330 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:33:21,330 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:33:21,330 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:33:21,331 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:33:21,331 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:33:21,331 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:33:21,331 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:33:21,332 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:33:21,332 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:33:21,332 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:33:21,332 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:33:21,333 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:33:21,333 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:33:21,336 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:33:21,336 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:33:21,337 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:33:21,348 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:33:21,362 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:33:23,313 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:33:23,430 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:33:23,646 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:33:23,656 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:33:25,684 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:33:31,018 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:33:31,018 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:33:31,019 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:33:31,019 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:33:31,020 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:33:31,020 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:33:31,021 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:33:31,150 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:33:31,152 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:33:31,152 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:33:31,153 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:33:31,169 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:33:31,170 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:33:31,249 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:33:31,250 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:33:31,251 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:33:31,251 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:33:31,251 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:33:31,252 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:33:31,252 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:33:31,253 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:33:31,253 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:33:31,253 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:33:31,254 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:33:31,254 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:33:31,255 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:33:31,255 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:33:31,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:33:31,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:33:31,257 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:33:31,257 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:33:31,258 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:33:31,258 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:33:31,259 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:33:31,259 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:33:31,260 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:33:31,260 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:33:31,261 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:33:31,261 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:33:31,262 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:33:31,263 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:33:31,264 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:33:31,265 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:33:31,266 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:33:31,271 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:33:31,271 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:33:31,272 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:33:31,288 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:33:31,307 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:33:33,200 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:33:33,275 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:33:33,475 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:33:33,485 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:33:35,520 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:33:41,184 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:33:41,185 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:33:41,185 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:33:41,185 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:33:41,186 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:33:41,187 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:33:41,187 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:33:41,291 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:33:41,292 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:33:41,293 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:33:41,294 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:33:41,310 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:33:41,310 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:33:41,348 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:33:41,349 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:33:41,350 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:33:41,350 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:33:41,350 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:33:41,351 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:33:41,351 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:33:41,351 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:33:41,352 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:33:41,352 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:33:41,352 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:33:41,353 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:33:41,353 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:33:41,354 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:33:41,354 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:33:41,354 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:33:41,355 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:33:41,355 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:33:41,356 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:33:41,356 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:33:41,357 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:33:41,357 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:33:41,358 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:33:41,358 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:33:41,359 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:33:41,359 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:33:41,360 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:33:41,360 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:33:41,361 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:33:41,361 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:33:41,362 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:33:41,367 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:33:41,367 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:33:41,368 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:33:41,383 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:33:41,400 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:33:43,260 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:33:43,338 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:33:43,549 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:33:43,559 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:33:45,673 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:33:51,855 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:33:51,856 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:33:51,857 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:33:51,857 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:33:51,858 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:33:51,858 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:33:51,859 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:33:51,986 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:33:51,988 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:33:51,989 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:33:51,990 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:33:52,003 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:33:52,004 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:33:52,076 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:33:52,078 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:33:52,079 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:33:52,080 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:33:52,081 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:33:52,081 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:33:52,082 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:33:52,082 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:33:52,083 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:33:52,083 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:33:52,084 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:33:52,085 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:33:52,085 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:33:52,086 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:33:52,086 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:33:52,086 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:33:52,087 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:33:52,087 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:33:52,088 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:33:52,088 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:33:52,089 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:33:52,090 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:33:52,091 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:33:52,092 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:33:52,093 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:33:52,094 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:33:52,094 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:33:52,095 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:33:52,095 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:33:52,096 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:33:52,096 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:33:52,100 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:33:52,101 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:33:52,102 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:33:52,116 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:33:52,132 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:33:54,030 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:33:54,111 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:33:54,319 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:33:54,330 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:33:56,300 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:34:04,064 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:34:04,065 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:34:04,065 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:34:04,065 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:34:04,066 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:34:04,066 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:34:04,067 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:34:04,193 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:34:04,194 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:34:04,195 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: LightGBMRegresso
+2025-02-28 04:34:04,196 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:34:04,212 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:34:04,213 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:34:04,244 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:34:04,245 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:34:04,246 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:34:04,247 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:34:04,247 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:34:04,247 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:34:04,248 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:34:04,248 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:34:04,248 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:34:04,249 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:34:04,249 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:34:04,250 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:34:04,250 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:34:04,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:34:04,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:34:04,252 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:34:04,252 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:34:04,252 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:34:04,253 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:34:04,253 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:34:04,254 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:34:04,254 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:34:04,254 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:34:04,255 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:34:04,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:34:04,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:34:04,257 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:34:04,257 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:34:04,258 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:34:04,258 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:34:04,259 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:34:04,264 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:34:04,264 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:34:04,265 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:34:04,278 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:34:04,295 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:34:06,238 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:34:06,311 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:34:06,522 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:34:06,532 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:34:08,459 - freqtrade - ERROR - Impossible to load FreqaiModel 'LightGBMRegresso'. This class does not exist or contains Python code errors.
+2025-02-28 04:35:58,566 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-02-28 04:35:58,566 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2025-02-28 04:35:58,567 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2025-02-28 04:35:58,567 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2025-02-28 04:35:58,568 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2025-02-28 04:35:58,569 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2025-02-28 04:35:58,569 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2025-02-28 04:35:58,696 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-02-28 04:35:58,698 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2025-02-28 04:35:58,698 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: XGBoostRegressor
+2025-02-28 04:35:58,699 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-02-28 04:35:58,713 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2025-02-28 04:35:58,714 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2025-02-28 04:35:58,749 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FreqaiExampleStrategy from '/freqtrade/user_data/strategies/FreqaiExampleStrategy.py'...
+2025-02-28 04:35:58,750 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2025-02-28 04:35:58,751 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 3m.
+2025-02-28 04:35:58,752 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2025-02-28 04:35:58,752 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 200.
+2025-02-28 04:35:58,753 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 30}.
+2025-02-28 04:35:58,753 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2025-02-28 04:35:58,753 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.1, '240': -1}
+2025-02-28 04:35:58,754 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 3m
+2025-02-28 04:35:58,754 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2025-02-28 04:35:58,754 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2025-02-28 04:35:58,755 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2025-02-28 04:35:58,756 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2025-02-28 04:35:58,756 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2025-02-28 04:35:58,757 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2025-02-28 04:35:58,757 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2025-02-28 04:35:58,757 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2025-02-28 04:35:58,758 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2025-02-28 04:35:58,758 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 200
+2025-02-28 04:35:58,758 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 40
+2025-02-28 04:35:58,759 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 30}
+2025-02-28 04:35:58,759 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2025-02-28 04:35:58,759 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2025-02-28 04:35:58,760 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2025-02-28 04:35:58,760 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2025-02-28 04:35:58,761 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2025-02-28 04:35:58,761 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2025-02-28 04:35:58,762 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2025-02-28 04:35:58,763 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2025-02-28 04:35:58,764 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2025-02-28 04:35:58,765 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-02-28 04:35:58,769 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-02-28 04:35:58,770 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.35
+2025-02-28 04:35:58,771 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:35:58,784 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2025-02-28 04:35:58,800 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2025-02-28 04:36:00,703 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2025-02-28 04:36:00,783 - freqtrade.wallets - INFO - Wallets synced.
+2025-02-28 04:36:01,050 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2025-02-28 04:36:01,061 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 2 pairs: ['1INCH/USDT:USDT', 'ALGO/USDT:USDT']
+2025-02-28 04:36:02,711 - matplotlib.font_manager - INFO - generated new fontManager
+2025-02-28 04:36:03,040 - freqtrade.resolvers.iresolver - INFO - Using resolved freqaimodel XGBoostRegressor from '/freqtrade/freqtrade/freqai/prediction_models/XGBoostRegressor.py'...
+2025-02-28 04:36:03,047 - freqtrade.freqai.freqai_interface - INFO - Backtesting module configured to save all models.
+2025-02-28 04:36:03,111 - freqtrade.freqai.data_drawer - INFO - Found existing historic predictions at /freqtrade/user_data/models/unique-id, but beware that statistics may be inaccurate if the bot has been offline for an extended period of time.
+2025-02-28 04:36:03,111 - freqtrade.freqai.freqai_interface - INFO - Set existing queue from trained timestamps. Best approximation queue: {best_queue}
+2025-02-28 04:36:03,120 - freqtrade.strategy.interface - INFO - Downloading all training data for all pairs in whitelist and corr_pairlist, this may take a while if the data is not already on disk.
+2025-02-28 04:36:03,126 - freqtrade.freqai.utils - INFO - FreqAI auto-downloader using 60 startup candles.
+2025-02-28 04:36:03,220 - freqtrade.data.history.history_utils - INFO - Download history data for "1INCH/USDT:USDT", 3m, futures and store in /freqtrade/user_data/data/binance. From 2025-02-28T03:48:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:03,416 - freqtrade.exchange.exchange - INFO - Downloaded data for 1INCH/USDT:USDT with length 17.
+2025-02-28 04:36:03,593 - freqtrade.data.history.history_utils - INFO - Download history data for "1INCH/USDT:USDT", 15m, futures and store in /freqtrade/user_data/data/binance. From 2025-02-28T03:15:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:03,993 - freqtrade.exchange.exchange - INFO - Downloaded data for 1INCH/USDT:USDT with length 6.
+2025-02-28 04:36:04,088 - freqtrade.data.history.history_utils - INFO - Download history data for "1INCH/USDT:USDT", 1h, futures and store in /freqtrade/user_data/data/binance. From 2025-02-28T01:00:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:04,488 - freqtrade.exchange.exchange - INFO - Downloaded data for 1INCH/USDT:USDT with length 4.
+2025-02-28 04:36:04,559 - freqtrade.data.history.history_utils - INFO - Download history data for "1INCH/USDT:USDT", 8h, funding_rate and store in /freqtrade/user_data/data/binance. From 2025-02-27T08:00:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:04,954 - freqtrade.exchange.exchange - INFO - Downloaded data for 1INCH/USDT:USDT with length 3.
+2025-02-28 04:36:05,005 - freqtrade.data.history.history_utils - INFO - Download history data for "1INCH/USDT:USDT", 8h, mark and store in /freqtrade/user_data/data/binance. From 2025-02-27T08:00:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:05,203 - freqtrade.exchange.exchange - INFO - Downloaded data for 1INCH/USDT:USDT with length 3.
+2025-02-28 04:36:05,327 - freqtrade.data.history.history_utils - INFO - Download history data for "ALGO/USDT:USDT", 3m, futures and store in /freqtrade/user_data/data/binance. From 2025-02-28T03:48:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:05,731 - freqtrade.exchange.exchange - INFO - Downloaded data for ALGO/USDT:USDT with length 17.
+2025-02-28 04:36:05,900 - freqtrade.data.history.history_utils - INFO - Download history data for "ALGO/USDT:USDT", 15m, futures and store in /freqtrade/user_data/data/binance. From 2025-02-28T03:15:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:06,297 - freqtrade.exchange.exchange - INFO - Downloaded data for ALGO/USDT:USDT with length 6.
+2025-02-28 04:36:06,380 - freqtrade.data.history.history_utils - INFO - Download history data for "ALGO/USDT:USDT", 1h, futures and store in /freqtrade/user_data/data/binance. From 2025-02-28T01:00:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:06,777 - freqtrade.exchange.exchange - INFO - Downloaded data for ALGO/USDT:USDT with length 4.
+2025-02-28 04:36:06,823 - freqtrade.data.history.history_utils - INFO - Download history data for "ALGO/USDT:USDT", 8h, funding_rate and store in /freqtrade/user_data/data/binance. From 2025-02-27T08:00:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:07,225 - freqtrade.exchange.exchange - INFO - Downloaded data for ALGO/USDT:USDT with length 3.
+2025-02-28 04:36:07,290 - freqtrade.data.history.history_utils - INFO - Download history data for "ALGO/USDT:USDT", 8h, mark and store in /freqtrade/user_data/data/binance. From 2025-02-27T08:00:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:07,486 - freqtrade.exchange.exchange - INFO - Downloaded data for ALGO/USDT:USDT with length 3.
+2025-02-28 04:36:07,610 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 3m, futures and store in /freqtrade/user_data/data/binance. From 2025-02-28T03:48:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:08,008 - freqtrade.exchange.exchange - INFO - Downloaded data for BTC/USDT:USDT with length 17.
+2025-02-28 04:36:08,186 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 15m, futures and store in /freqtrade/user_data/data/binance. From 2025-02-28T03:15:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:08,582 - freqtrade.exchange.exchange - INFO - Downloaded data for BTC/USDT:USDT with length 6.
+2025-02-28 04:36:08,672 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 1h, futures and store in /freqtrade/user_data/data/binance. From 2025-02-28T01:00:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:09,068 - freqtrade.exchange.exchange - INFO - Downloaded data for BTC/USDT:USDT with length 4.
+2025-02-28 04:36:09,122 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 8h, funding_rate and store in /freqtrade/user_data/data/binance. From 2025-02-27T08:00:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:09,523 - freqtrade.exchange.exchange - INFO - Downloaded data for BTC/USDT:USDT with length 3.
+2025-02-28 04:36:09,568 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 8h, mark and store in /freqtrade/user_data/data/binance. From 2025-02-27T08:00:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:09,763 - freqtrade.exchange.exchange - INFO - Downloaded data for BTC/USDT:USDT with length 3.
+2025-02-28 04:36:09,870 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 3m, futures and store in /freqtrade/user_data/data/binance. From 2025-02-28T03:48:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:10,269 - freqtrade.exchange.exchange - INFO - Downloaded data for ETH/USDT:USDT with length 17.
+2025-02-28 04:36:10,467 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 15m, futures and store in /freqtrade/user_data/data/binance. From 2025-02-28T03:15:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:10,869 - freqtrade.exchange.exchange - INFO - Downloaded data for ETH/USDT:USDT with length 6.
+2025-02-28 04:36:10,965 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 1h, futures and store in /freqtrade/user_data/data/binance. From 2025-02-28T01:00:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:11,366 - freqtrade.exchange.exchange - INFO - Downloaded data for ETH/USDT:USDT with length 4.
+2025-02-28 04:36:11,421 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 8h, funding_rate and store in /freqtrade/user_data/data/binance. From 2025-02-27T08:00:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:11,826 - freqtrade.exchange.exchange - INFO - Downloaded data for ETH/USDT:USDT with length 3.
+2025-02-28 04:36:11,884 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 8h, mark and store in /freqtrade/user_data/data/binance. From 2025-02-27T08:00:00 to 2025-02-28T04:36:03
+2025-02-28 04:36:12,082 - freqtrade.exchange.exchange - INFO - Downloaded data for ETH/USDT:USDT with length 3.
+2025-02-28 04:36:12,135 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2025-02-28 04:36:12,136 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2025-02-28 04:36:12,137 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2025-02-28 04:36:12,137 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2025-02-28 04:36:12,138 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2025-02-28 04:36:12,138 - freqtrade.worker - INFO - Changing state to: RUNNING
+2025-02-28 04:36:12,139 - freqtrade.util.migrations.binance_mig - WARNING - Migrating binance futures pairs in database.
+2025-02-28 04:36:12,147 - freqtrade.util.migrations.binance_mig - WARNING - Done migrating binance futures pairs in database.
+2025-02-28 04:36:12,179 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2025-02-28 04:36:12,180 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `binance`\n*Stake per trade:* `200 USDT`\n*Minimum ROI:* `{'0': 0.1, '240': -1}`\n*Stoploss:* `-0.05`\n*Position adjustment:* `Off`\n*Timeframe:* `3m`\n*Strategy:* `FreqaiExampleStrategy`"}
+2025-02-28 04:36:12,181 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+2025-02-28 04:36:16,502 - freqtrade.freqai.data_kitchen - INFO - dropped 41 of 999 prediction data points due to NaNs.
+2025-02-28 04:36:17,297 - freqtrade.freqai.data_kitchen - INFO - dropped 41 of 999 prediction data points due to NaNs.
+2025-02-28 04:36:17,878 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.11', state='RUNNING'
+2025-02-28 04:36:18,099 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - -------------------- Starting training 1INCH/USDT:USDT --------------------
+2025-02-28 04:36:18,145 - freqtrade.freqai.data_kitchen - INFO - 1INCH/USDT:USDT: dropped 20 training points due to NaNs in populated dataset 7199.
+2025-02-28 04:36:18,147 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - -------------------- Training on data from 2025-02-13 to 2025-02-28 --------------------
+2025-02-28 04:36:18,238 - datasieve.pipeline - INFO - SVM detected 98 data points as outliers.
+2025-02-28 04:36:19,599 - datasieve.pipeline - INFO - SVM detected 1551 data points as outliers.
+2025-02-28 04:36:19,778 - datasieve.pipeline - INFO - DI tossed 1 predictions for being too far from training data.
+2025-02-28 04:36:19,780 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - Training model on 569 features
+2025-02-28 04:36:19,781 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - Training model on 4711 data points
+2025-02-28 04:36:28,575 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - -------------------- Done training 1INCH/USDT:USDT (10.48 secs) --------------------
+2025-02-28 04:36:28,868 - freqtrade.freqai.data_drawer - INFO - Freqai purging old model file /freqtrade/user_data/models/unique-id/sub-train-1INCH_1740716394
+2025-02-28 04:36:28,892 - freqtrade.freqai.data_drawer - INFO - Freqai purging old model file /freqtrade/user_data/models/unique-id/sub-train-1INCH_1740716421
+2025-02-28 04:36:30,406 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - -------------------- Starting training ALGO/USDT:USDT --------------------
+2025-02-28 04:36:30,451 - freqtrade.freqai.data_kitchen - INFO - ALGO/USDT:USDT: dropped 20 training points due to NaNs in populated dataset 7199.
+2025-02-28 04:36:30,452 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - -------------------- Training on data from 2025-02-13 to 2025-02-28 --------------------
+2025-02-28 04:36:30,546 - datasieve.pipeline - INFO - SVM detected 64 data points as outliers.
+2025-02-28 04:36:32,241 - datasieve.pipeline - INFO - SVM detected 1514 data points as outliers.
+2025-02-28 04:36:32,459 - datasieve.pipeline - INFO - DI tossed 37 predictions for being too far from training data.
+2025-02-28 04:36:32,462 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - Training model on 569 features
+2025-02-28 04:36:32,466 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - Training model on 4745 data points
+2025-02-28 04:36:42,183 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - -------------------- Done training ALGO/USDT:USDT (11.78 secs) --------------------
+2025-02-28 04:36:42,497 - freqtrade.freqai.data_drawer - INFO - Freqai purging old model file /freqtrade/user_data/models/unique-id/sub-train-ALGO_1740716408
+2025-02-28 04:36:42,519 - freqtrade.freqai.freqai_interface - INFO - Total time spent training pairlist 24.30 seconds
+2025-02-28 04:36:44,070 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - -------------------- Starting training 1INCH/USDT:USDT --------------------
+2025-02-28 04:36:44,118 - freqtrade.freqai.data_kitchen - INFO - 1INCH/USDT:USDT: dropped 20 training points due to NaNs in populated dataset 7199.
+2025-02-28 04:36:44,119 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - -------------------- Training on data from 2025-02-13 to 2025-02-28 --------------------
+2025-02-28 04:36:44,216 - datasieve.pipeline - INFO - SVM detected 98 data points as outliers.
+2025-02-28 04:36:46,016 - datasieve.pipeline - INFO - SVM detected 1551 data points as outliers.
+2025-02-28 04:36:46,183 - datasieve.pipeline - INFO - DI tossed 1 predictions for being too far from training data.
+2025-02-28 04:36:46,186 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - Training model on 569 features
+2025-02-28 04:36:46,187 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - Training model on 4711 data points
+2025-02-28 04:36:46,687 - freqtrade.commands.trade_commands - INFO - worker found ... calling exit
+2025-02-28 04:36:46,688 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'process died'}
+2025-02-28 04:36:46,692 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2025-02-28 04:36:46,702 - freqtrade.freqai.freqai_interface - INFO - Stopping FreqAI
+2025-02-28 04:36:46,796 - freqtrade.freqai.freqai_interface - INFO - Waiting on Training iteration
